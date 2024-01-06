@@ -67,7 +67,7 @@ const App: React.FC = () => {
   const handleValueChange = useCallback<CardTemplateProps['onValueChange']>(
     (id, data) => {
       const val = content.map(item => item.id === id ? ({ ...item, content: data }) : item)
-      setContent(val)
+      setContent(val as TemplateItem[])
     },
     [content]
   )

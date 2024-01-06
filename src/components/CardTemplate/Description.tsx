@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react"
-import Editor from "react-simple-wysiwyg"
+import Editor, { ContentEditableEvent } from "react-simple-wysiwyg"
 
 interface TitleProps {
   value?: string
@@ -13,7 +13,7 @@ const Description: React.FC<TitleProps> = ({ value, onChange }) => {
     setDesc(value)
   }, [value])
 
-  const handleChange = useCallback(e => {
+  const handleChange = useCallback((e: ContentEditableEvent) => {
     setDesc(e.target.value)
     onChange?.(e.target.value)
   }, [onChange])

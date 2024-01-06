@@ -13,7 +13,7 @@ const Title: React.FC<TitleProps> = ({ value, onChange }) => {
     setTitle(value)
   }, [value])
 
-  const handleChange = useCallback(e => {
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = useCallback(e => {
     setTitle(e.target.value)
     onChange?.(e.target.value)
   }, [onChange])
