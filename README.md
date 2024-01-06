@@ -1,6 +1,6 @@
 ![image](https://github.com/0xWormh0le/dna-react-test/assets/18642714/0a6f5fe2-4f92-4ad9-8011-73d949491774)
 
-https://dna-react-test-v6sw.vercel.app/
+Deployed on https://dna-react-test-v6sw.vercel.app/
 
 # React + TypeScript + Vite
 
